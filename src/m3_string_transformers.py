@@ -9,8 +9,8 @@ are necessary in a class definition.
 
 Authors: David Mutchler, Vibha Alangar, Dave Fisher, Matt Boutell, Mark Hays,
          Mohammed Noureddine, Sana Ebrahimi, Sriram Mohan, their colleagues and
-         Bilbo.
-"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         PUT_YOUR_NAME_HERE.
+"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 """
@@ -40,30 +40,13 @@ Here are some examples that you can use for testing:
 """
 
 
-# TODO: 2. Implement the NameDropper class and add some code that tests it.
+# TODO: 2. Live code with your instructor
+#       Implement the NameDropper class and add some code that tests it.
 ###############################################################################
-class NameDropper:
-    def __init__(self, name):
-        self.name = name
 
-    def transform(self, string):
-        return "{} says {}".format(self.name, string)
-
-
-def test_namedropper():
-    elsa = NameDropper("Elsa")
-    sarah = NameDropper("Sarah")
-    a = elsa.transform("Robots are fun.")
-    b = elsa.transform("Crayons are fun too.")
-    c = sarah.transform("You make me happy.")
-    d = elsa.transform("I am unsure about rocks.")
-    print(a, b, c, d, sep="\n")
-
-
-test_namedropper()
 
 ###############################################################################
-"""
+""" 
 A Censor has a character (string) associated with it, that defaults to the
 character "e". (HINT: Google for "python default parameter" to learn 
 how to use parameters with default values.)
@@ -101,26 +84,10 @@ Here are some examples that you can use for testing:
 #   Type        "" then DOT           or, if you prefer,  "xxx" then DOT
 #   and PAUSE to let the DOT trick show you string methods.
 ###############################################################################
-class Censor:
-    def __init__(self, character_to_censor="e"):
-        self.character_to_censor = character_to_censor
-
-    def transform(self, string):
-        """ :type string: str """
-        return string.replace(self.character_to_censor, "*")
 
 
-def test_censor():
-    elsa = Censor("a")
-    sarah = Censor()
-    a = elsa.transform("Alice in Wonderland")
-    b = sarah.transform("Tweedledee and Tweedledum")
-    c = sarah.transform("eeaaee!!")
-    d = elsa.transform("Cats are naturally lazy")
-    print(a, b, c, d, sep="\n")
 
 
-test_censor()
 
 ###############################################################################
 """
@@ -149,6 +116,8 @@ Here are some examples that you can use for testing:
            1. This is Alice
            4. This is Bob again
 """
+
+
 # TODO: 4. Implement the Counter class and add some code that tests it.
 ###############################################################################
 
@@ -164,61 +133,7 @@ the phrase that it was PREVIOUSLY given.  It returns "START" the first time.
        elsa.transform("Sing for me")     returns "Goodbye"
        elsa.transform("What is next?")   returns "Sing for me"
 """
+
+
 # TODO: 5. Implement the SlowThinker class and add some code that tests it.
-###############################################################################
-
-
-###############################################################################
-"""
-A Doubler's transform  method transforms the phrase it is given into
-the phrase, followed by a space, followed by the phrase again.
-
-       elsa = Doubler()
-       elsa.transform("Hello")           returns "Hello Hello"
-       elsa.transform("Goodbye")         returns "Goodbye Goodbye"
-       elsa.transform("Sing for me")     returns "Sing for me Sing for me"
-"""
-# TODO: 6. Implement the Doubler class and add some code that tests it.
-###############################################################################
-
-
-###############################################################################
-"""
-A Repeater has a positive integer N, that defaults to 1.
-Its transform  method:
-  -- when called the first time, transforms the phrase it is given into
-     N    copies of the phrase, one after the other.
-  -- when called the second time, transforms the phrase it is given into
-     N+1  copies of the phrase, one after the other.
-  -- when called the third time, transforms the phrase it is given into
-     N+2  copies of the phrase, one after the other.
-  -- etc.
-
-       elsa = Repeater(3)
-       elsa.transform("Hello")
-              returns "HelloHelloHello"
-       elsa.transform("Goodbye")
-              returns "GoodbyeGoodbyeGoodbyeGoodbye"
-       elsa.transform("Watch me")
-              returns "Watch meWatch meWatch meWatch meWatch me"
-"""
-# TODO: 7. Implement the Repeater class and add some code that tests it.
-###############################################################################
-
-
-###############################################################################
-"""
-An UpperLowerCaser's transform  method transforms the phrase it is given into:
-  -- all upper-case the first time that it is called
-  -- all lower-case the second time that it is called
-  --  [alternates from there: upper-case, lower-case, upper-case, etc.]
-
-       elsa = UpperLowerCaser()
-       elsa.transform("Hello")        returns "HELLO"
-       elsa.transform("Goodbye")      returns "goodbye"
-       elsa.transform("Watch me")     returns "WATCH ME"
-       elsa.transform("This Is OKK")  returns "this is okk"
-       elsa.transform("This Is OKK")  returns "THIS IS OKK"
-"""
-# TODO: 8. Implement the UpperLowerCaser class and add some code that tests it.
 ###############################################################################
