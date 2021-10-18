@@ -44,8 +44,8 @@ The KEY IDEAS are:
      
 Authors: David Mutchler, Vibha Alangar, Dave Fisher, Matt Boutell, Mark Hays,
          Mohammed Noureddine, Sana Ebrahimi, Sriram Mohan, their colleagues and
-         Groucho.
-"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         PUT_YOUR_NAME_HERE.
+"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import math
 import m1t_test_Line as m1t
