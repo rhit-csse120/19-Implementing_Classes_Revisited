@@ -22,9 +22,9 @@ def main():
     """ Calls the   TEST   functions in this module. """
     # Uncomment these one-by-one as you do the testing.
     run_test_NameDropper()
-    run_test_Censor()
-    run_test_Counter()
-    run_test_SlowThinker()
+    # run_test_Censor()
+    # run_test_Counter()
+    # run_test_SlowThinker()
 
 
 ###############################################################################
@@ -130,11 +130,6 @@ class Censor:
            sarah.transform("Tweedledee and Tweedledum")
                returns     "Tw**dl*d** and Tw**dl*dum"
     """
-    def __init__(self, character_to_censure="e"):
-        self.character_to_censure = character_to_censure
-
-    def transform(self, phrase):
-        return phrase.replace(self.character_to_censure, "*")
 
 
 def run_test_Censor():
@@ -207,12 +202,6 @@ class Counter:
            bob.transform("This is Bob")    returns "1. This is Bob"
            elsa.transform("Sing for me")   returns "3. Sing for me"
     """
-    def __init__(self):
-        self.counter = 0
-
-    def transform(self, phrase):
-        self.counter = self.counter + 1
-        return "{}. {}".format(self.counter, phrase)
 
 
 def run_test_Counter():
@@ -293,13 +282,6 @@ class SlowThinker:
            elsa.transform("What is next?")   returns "Sing for me"
            bob.transform("Not yet")          returns "Interruption"
     """
-    def __init__(self):
-        self.next_phrase = "START"
-
-    def transform(self, phrase):
-        current_phrase = self.next_phrase
-        self.next_phrase = phrase
-        return current_phrase
 
 
 def run_test_SlowThinker():
